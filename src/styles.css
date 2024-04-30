@@ -20,6 +20,48 @@ a:visited {
   background-color: #faf7ee;
 }
 
+.logo-container {
+  position: relative;
+  background-color: #c37c13;
+  width: 100px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-bg .logo-container {
+  margin-top: -8px;
+  width: 80px;
+  height: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-bg .logo-text {
+  font-size: 0.625rem;
+  top: 70px;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1.7px;
+  line-height: 1.5;
+}
+
+.logo-text {
+  position: absolute;
+  top: 88px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #f3e5d0;
+  text-align: center;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  font-size: 0.875rem;
+  transition: all 0.3s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
 .header-container {
   padding-bottom: 2em;
 }
@@ -35,8 +77,8 @@ a:visited {
 
 .header-bg {
   background-color: rgba(255, 255, 255, 1);
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0;
 }
 
 .wrapper-top {
@@ -159,6 +201,32 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
+  .logo-container {
+    margin-top: -20px;
+    width: 60px;
+    height: 78px;
+  }
+
+  .logo-text {
+    font-size: 0.5rem;
+    top: 52px;
+    letter-spacing: 1.7px;
+    line-height: 1.4;
+  }
+
+  .header-bg .logo-container {
+    margin-top: 0;
+    width: 60px;
+    height: 78px;
+  }
+
+  .header-bg .logo-text {
+    font-size: 0.5rem;
+    top: 52px;
+    letter-spacing: 1.7px;
+    line-height: 1.4;
+  }
+
   .container {
     background-size: 200%;
     background-repeat: no-repeat;
@@ -207,7 +275,7 @@ h1 {
     position: absolute;
     flex-direction: column;
     align-items: center;
-    top: 0px;
+    top: -20px;
     left: 0px;
     padding-top: 30%;
     opacity: 1;
@@ -265,6 +333,10 @@ h1 {
     position: absolute;
   }
 
+  .header-container {
+    padding-bottom: 3em;
+  }
+
   .header {
     padding: 1em 2em 0.5em;
   }
@@ -276,6 +348,37 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-bg .logo-container {
+    margin-top: -3px;
+    width: 80px;
+    height: 105px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header-bg .logo-text {
+    font-size: 0.625rem;
+    top: 70px;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1.7px;
+    line-height: 1.5;
+  }
+
+  .header-container {
+    padding-bottom: 5em;
+  }
+
+  .logo-container {
+    margin-top: 0;
+    width: 80px;
+    height: 105px;
+  }
+
+  .logo-text {
+    font-size: 0.625rem;
+    top: 70px;
+    letter-spacing: 1.7px;
+    line-height: 1.5;
+  }
   .header-ul {
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -311,9 +414,13 @@ h1 {
     cursor: pointer;
     z-index: 999;
     right: 25px;
-    top: 34px;
+    top: 52px;
     position: absolute;
     transition: all 0.3s ease-in-out;
+  }
+
+  .header-bg .menu-btn {
+    top: 40px;
   }
 
   .menu-btn.active {
@@ -349,6 +456,11 @@ h1 {
   .header-call {
     right: 80px;
     position: absolute;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header-bg .header-call {
+    top: 25px;
   }
 
   .list-item {
@@ -387,7 +499,7 @@ h1 {
 
   .header-bg {
     background-color: #fff;
-    padding: 1em 2em 0.375em;
+    padding: 0 2em 0em;
   }
 
   .person-img {
@@ -403,7 +515,7 @@ h1 {
 
   .section-one {
     height: 720px;
-    padding-top: 5em;
+    padding-top: 7em;
   }
 }
 

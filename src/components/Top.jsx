@@ -1,6 +1,6 @@
 import { useState } from "react"
 import person from "../assets/person2.png"
-
+import logo from "../assets/main-logo.svg"
 function Top() {
 
     const [color, setColor] = useState(false)
@@ -20,7 +20,10 @@ function Top() {
             <div className="header-container">
                 <header className={color ? "header header-bg" : "header"}>
                     <div className='wrapper-top'>
-
+                        <div className="logo-container">
+                            <img src={logo} alt="Logo" />
+                            <span className="logo-text">VAN DİŞ KLİNİĞİ</span>
+                        </div>
                         <nav className="header-nav">
                             <ul className={showMenu ? "header-ul show-menu" : "header-ul"}>
                                 <li className="list-item"><a className="list-item-link" href="#">ANA SAYFA</a></li>
