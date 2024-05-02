@@ -32,10 +32,10 @@ function Top() {
             <div className="header-container">
                 <header className={color ? "header header-bg" : "header"}>
                     <div className="wrapper-top">
-                        <div className="logo-container">
+                        <a className="logo-container" href="">
                             <img src={logo} alt="Van Diş Kliniği Logo" />
                             <span className="logo-text">VAN DİŞ KLİNİĞİ</span>
-                        </div>
+                        </a>
                         <nav className="header-nav">
                             <ul className={showMenu ? "header-ul show-menu" : "header-ul"}>
                                 <li className="list-item">
@@ -107,7 +107,7 @@ function Top() {
             <section className="section-one" id="top">
                 <div className="wrapper">
                     <div className="section-one-text">
-                        <h1 className="h1">Sağlıklı Gülüşler için Buradayız</h1>
+                        <h1 className="h1">Sağlıklı Gülüşler için Uzman Ekibimizle Hizmetinizdeyiz</h1>
                         <p className="subtext">
                             Kliniğimizde, her hastamıza bireyselleştirilmiş bir yaklaşımla
                             sağlıklı ve güzel bir gülümseme sunmayı amaçlıyoruz. Uzun yıllara
