@@ -201,7 +201,7 @@ h1 {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .logo-container {
     margin-top: -20px;
     width: 60px;
@@ -260,6 +260,7 @@ h1 {
   .header-ul {
     opacity: 0;
     transition: all 0.3s ease-in-out;
+    pointer-events: none;
   }
 
   .list-item {
@@ -286,6 +287,7 @@ h1 {
     width: 100%;
     height: 100vh;
     z-index: 999;
+    pointer-events: auto;
   }
 
   .menu-btn {
@@ -329,9 +331,11 @@ h1 {
   }
 
   .header-call {
-    top: 24px;
+    top: 26px;
     right: 70px;
     position: absolute;
+    font-size: 0.75rem;
+    padding: 14px 26px;
   }
 
   .header-container {
@@ -348,7 +352,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
   .header-bg .logo-container {
     margin-top: -3px;
     width: 80px;
@@ -559,7 +563,7 @@ h1 {
   line-height: 1.6;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .location {
     flex-direction: column;
     gap: 2em;
@@ -587,7 +591,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
   .location {
     flex-direction: column;
     gap: 4em;
@@ -742,7 +746,7 @@ h1 {
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .carousel {
     padding: 2em 0 5em 1.125em;
     background-position: center top 10px;
@@ -771,7 +775,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
   .carousel {
     padding: 2em 0 5em 1.125em;
     background-position: center top 10px;
@@ -862,7 +866,7 @@ h1 {
   line-height: 1.5;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .service {
     flex-direction: column;
     padding-bottom: 5em;
@@ -893,7 +897,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
   .service-top {
     width: calc(50% - 10px);
     padding: 2em;
@@ -903,6 +907,12 @@ h1 {
   .service-h2 {
     font-size: 2.25rem;
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1240px) {
+  .service-top {
+    height: 400px;
   }
 }
 /* End Services */
@@ -954,7 +964,7 @@ h1 {
   top: 60px;
   object-fit: cover;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .top-footer {
     height: auto;
     padding: 6em 0 4em;
@@ -963,7 +973,7 @@ h1 {
   .smiley-face-container {
     width: 90%;
     margin: 0 auto;
-    margin-top: 9em;
+    margin-top: 7em;
   }
 
   .smiley-face-container > h2 {
@@ -991,12 +1001,12 @@ h1 {
     height: 200px;
   }
 
-  .header-call {
-    font-size: 0.875rem;
+  .header-call-second {
+    display: none;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
   .top-footer {
     height: auto;
     padding: 6em 0 4em;
@@ -1031,6 +1041,10 @@ h1 {
     right: 0;
     top: -180px;
     object-fit: cover;
+  }
+
+  .header-call-second {
+    display: none;
   }
 }
 
@@ -1171,7 +1185,7 @@ h1 {
   color: inherit;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .footer-container {
     flex-direction: column;
     padding: 1em 0;
@@ -1200,7 +1214,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
   .footer-container {
     flex-direction: column;
     padding: 1em 0;

@@ -12,7 +12,7 @@ export default function TopFooter() {
             <div className="smiley-face-container">
                 <img className="smiley-face" src={smileyFace} alt="Smiley Face"></img>
                 <h2>Sağlıklı bir gülümseme korunmaya değer.</h2>
-                <a className="header-call" href="tel:+905453293325" title="Bizi Arayın">Bizi Arayın</a>
+                <a className="header-call header-call-second" href="tel:+905453293325" title="Bizi Arayın">Bizi Arayın</a>
             </div>
         </section>
     )
