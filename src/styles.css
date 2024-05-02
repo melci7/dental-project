@@ -151,6 +151,7 @@ a:visited {
   text-decoration: none;
   color: inherit;
   display: block;
+  cursor: pointer;
 }
 
 /* End Top-Navbar */
@@ -826,6 +827,14 @@ h1 {
   border-radius: 8px;
   background-color: #fff;
   transition: all 0.3s ease-in-out;
+}
+
+.service-top:nth-last-child(2) {
+  margin-right: 0;
+}
+
+.service-top:last-child {
+  margin-right: auto;
 }
 
 .service-top:hover {

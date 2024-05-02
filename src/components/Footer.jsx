@@ -2,7 +2,7 @@ import logo from "../assets/instagram.svg"
 export default function Footer() {
     return (
         <footer>
-            <div className="footer">
+            <div className="footer" id="contact">
                 <div className="footer-container">
                     <div className="footer-services">
                         <p className="footer-title">Hizmetlerimiz</p>
@@ -34,7 +34,7 @@ export default function Footer() {
 
                                 </a>
                                 <a href="https://www.instagram.com/dt.gulustancakan/" className="footer-logo" target="_blank">
-                                    <img src={logo} className="footer-logo-instagram" />
+                                    <img src={logo} className="footer-logo-instagram" alt="Instagram Logo" />
                                 </a>
                             </li>
                         </ul>

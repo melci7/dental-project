@@ -9,13 +9,13 @@ import {
 
 export default function Card() {
     return (
-        <Carousel className="carousel">
+        <Carousel className="carousel" aria-label="Comments Carousel">
             <div className="arrow-container">
-                <CarouselPrevious className="arrow prev-arrow" />
-                <CarouselNext className="arrow next-arrow" />
+                <CarouselPrevious className="arrow prev-arrow" aria-label="Previous Comment" />
+                <CarouselNext className="arrow next-arrow" aria-label="Next Comment" />
             </div>
 
-            <CarouselContent className="card">
+            <CarouselContent className="card" aria-live="polite">
                 {data[0].comments.map((item, index) => (
                     <CarouselItem key={index} className="card-container">
                         <div className="quote-icon">
@@ -27,7 +27,6 @@ export default function Card() {
                             <p className="card-text-p">{item.comment}</p>
                             <h4 className="card-text-h4">{item.owner}</h4>
                         </div>
-
                     </CarouselItem>
                 ))}
             </CarouselContent>

@@ -11,11 +11,11 @@ export default function Maps() {
     const [open, setOpen] = useState(false)
 
     return (
-        <section className='location'>
+        <section className='location' id="location">
             <APIProvider apiKey={import.meta.env.VITE_map_apiKey}>
                 <div className="map">
                     <Map defaultZoom={14.6} defaultCenter={position} mapId={import.meta.env.VITE_map_id}>
-                        <AdvancedMarker position={position} onClick={() => setOpen(true)}>
+                        <AdvancedMarker position={position} onClick={() => setOpen(true)} aria-label="Diş Hekimi Gülüstan Çakan">
 
                         </AdvancedMarker>
                         {open && <InfoWindow position={position} onCloseClick={() => setOpen(false)}><p>Diş Hekimi Gülüstan Çakan</p></InfoWindow>}
@@ -24,7 +24,7 @@ export default function Maps() {
             </APIProvider >
             <div className="location-text">
                 <h2>Bizi Ziyaret Edin</h2>
-                <p>Kliniğimiz, şehir merkezine yakınlığı ve kolay ulaşılabilirliği hastalarımıza en iyi hizmeti sunmak için burada.</p>
+                <p>Kliniğimiz, şehir merkezine yakınlığı ve kolay ulaşılabilirliğiyle hastalarımıza en iyi hizmeti sunmak için burada.</p>
             </div>
         </section>
     )
