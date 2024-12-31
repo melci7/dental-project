@@ -20,8 +20,8 @@ To view the project locally, follow these steps:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/melci7/dental-landing-page.git
-   cd dental-landing-page
+   git clone https://github.com/melci7/dental-project.git
+   cd dental-project
    ```
 
 2. **Open in Browser**
